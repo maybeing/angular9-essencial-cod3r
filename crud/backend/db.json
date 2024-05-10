@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Lost Records",
+      "price": 299.99
+    },
+    {
+      "id": "2",
+      "name": "Mesa Digitalizadora Wacom Pro",
+      "price": 800
+    },
+    {
+      "id": "3",
+      "name": "Corset Preto",
+      "price": 89.2
+    },
+    {
+      "name": "Mouse Gamer",
+      "price": "260.10",
+      "id": "f25b"
+    }
+  ]
+}
