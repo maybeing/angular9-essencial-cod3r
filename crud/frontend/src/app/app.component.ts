@@ -1,12 +1,17 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './components/template/header/header.component';
+
 import { MatChipsModule } from '@angular/material/chips';
+
+import { HeaderComponent } from './components/template/header/header.component';
+import { FooterComponent } from './components/template/footer/footer.component';
+
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, MatChipsModule],
+  imports: [RouterOutlet, HeaderComponent, MatChipsModule, FooterComponent],
   template: `
     <app-header></app-header>
     <h1>Welcome to {{course}}!</h1>
@@ -19,8 +24,7 @@ import { MatChipsModule } from '@angular/material/chips';
       <mat-chip-option>Opção 4</mat-chip-option>
     </mat-chip-listbox>
     </div>
-
-    
+    <app-footer></app-footer>
   `,
   styles: ['body { padding: 20px; }'],
 })

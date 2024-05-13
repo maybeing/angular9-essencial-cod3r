@@ -1,21 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .header {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.header a {
+img {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black;
-    padding-right: 35px;
-    border-bottom: 2px solid transparent; /* Linha transparente inicialmente */
-    transition: border-bottom-color 0.3s;
 }
 
-.header a:hover {
-    border-bottom-color: red;
+.header a, button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: gray;
+    margin-right: 35px;
+    border-bottom: 2px solid transparent; /* Linha transparente inicialmente */
+    transition: 0.5s;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: 500;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid transparent !important;
+    background: transparent;
+}
+
+.header .selected {
+    color: black;
+}
+
+.disabled {
+    cursor: default !important;
+}
+
+.disabled:hover {
+    border-bottom-color: transparent !important;
+}
+
+.header a:hover, button:hover {
+    color: black;
+    border-bottom-color: #eb1f1f !important;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .header .logo {
