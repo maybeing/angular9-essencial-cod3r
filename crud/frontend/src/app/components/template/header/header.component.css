@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding-right: 35px;
+    border-bottom: 2px solid transparent; /* Linha transparente inicialmente */
+    transition: border-bottom-color 0.3s;
+}
+
+.header a:hover {
+    border-bottom-color: red;
+}
+
+.header .logo {
+    max-height: 32px;
+}
+
+.header .title-group {
+    padding-left: 35px;
+    display: inline-flex;
+}
+
+i {
+    padding-right: 5px;
+}
