@@ -1,0 +1,44 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item class="item">
+                <i class="material-icons v-middle">
+                    home
+                </i>
+                <span class="item">Início</span> 
+            </a>
+            <mat-divider></mat-divider>
+            <a mat-list-item>
+                <i class="material-icons v-middle">
+                    help
+                </i>
+                <span class="item">FAQ</span> 
+            </a>
+            <a mat-list-item>
+                <i class="material-icons v-middle">
+                    mail
+                </i>
+                <span class="item">Contato</span> 
+            </a>
+            <a mat-list-item (click)="toggleSection('invoicing')">
+                <i class="material-icons v-middle">
+                    star
+                </i>
+                <span class="item">Projetos</span>
+                <i class="material-icons v-middle" *ngIf="!sections.invoicing">expand_less</i>
+                <i class="material-icons v-middle" *ngIf="sections.invoicing">expand_more</i>
+            </a>            
+        </mat-nav-list>
+        <mat-nav-list class="nav-list" *ngIf="sections.invoicing">
+            <a mat-list-item>
+                <span class="item">Projeto 1</span>
+            </a>
+            <a mat-list-item disabled>
+                <span class="item">Projeto 2 (descontinuado)</span>
+            </a>
+            <a mat-list-item>
+                <span class="item">Projeto 3</span>
+            </a>
+          </mat-nav-list>
+    </mat-sidenav>
+</mat-sidenav-container>

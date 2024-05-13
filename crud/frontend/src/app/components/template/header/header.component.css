@@ -2,8 +2,8 @@
 
 .header {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    justify-content: space-between; /* Isso empurrará a logo para a esquerda e os links para a direita */
+    width: 100%; /* Garante que a barra ocupe toda a largura */
 }
 
 img {
@@ -11,7 +11,11 @@ img {
     align-items: center;
     text-decoration: none;
 }
-
+.title-group {
+    display: flex; /* Faz com que os links dentro do title-group se alinhem horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: flex-end; /* Alinha os links à direita */
+}
 .header a, button {
     display: flex;
     align-items: center;

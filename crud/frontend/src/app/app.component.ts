@@ -5,13 +5,13 @@ import { MatChipsModule } from '@angular/material/chips';
 
 import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
-
+import { NavComponent } from './components/template/nav/nav.component'
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, MatChipsModule, FooterComponent],
+  imports: [RouterOutlet, HeaderComponent, MatChipsModule, FooterComponent, NavComponent],
   template: `
     <app-header></app-header>
     <h1>Welcome to {{course}}!</h1>
@@ -24,7 +24,9 @@ import { FooterComponent } from './components/template/footer/footer.component';
       <mat-chip-option>Opção 4</mat-chip-option>
     </mat-chip-listbox>
     </div>
+    <app-nav></app-nav>
     <app-footer></app-footer>
+    
   `,
   styles: ['body { padding: 20px; }'],
 })
