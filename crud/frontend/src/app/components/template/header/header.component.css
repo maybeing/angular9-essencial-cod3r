@@ -10,6 +10,7 @@ img {
     display: flex;
     align-items: center;
     text-decoration: none;
+    user-select: none;  
 }
 .title-group {
     display: flex; /* Faz com que os links dentro do title-group se alinhem horizontalmente */
@@ -33,6 +34,7 @@ img {
     border-top: none;
     border-bottom: 2px solid transparent !important;
     background: transparent;
+    user-select: none;  
 }
 
 .header .selected {

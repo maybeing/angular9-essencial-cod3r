@@ -1,19 +1,18 @@
-import { Component } from '@angular/core';
-
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatListModule } from '@angular/material/list';
-import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 
 type SectionKey = 'invoicing' | 'accountPro';
-
 @Component({
   selector: 'app-nav',
-  standalone: true,
-  imports: [MatSidenavModule, MatListModule, CommonModule],
   templateUrl: './nav.component.html',
-  styleUrl: './nav.component.css'
+  styleUrls: ['./nav.component.css']
 })
-export class NavComponent {
+export class NavComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+    
+  }
   sections: Record<SectionKey, boolean> = {
     invoicing: false,
     accountPro: false,
@@ -22,4 +21,5 @@ export class NavComponent {
   toggleSection(section: SectionKey) {
     this.sections[section] = !this.sections[section];
   }
+
 }

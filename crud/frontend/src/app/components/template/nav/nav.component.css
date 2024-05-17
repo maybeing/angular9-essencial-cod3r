@@ -4,26 +4,27 @@
 .sidenav {
     width: 200px;
     background-color: #eb1f1f;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+  /*  border-top-right-radius: 20px;*/
+  /*  border-bottom-right-radius: 20px;*/
 }
 
 .sidenav i {
     padding-right: 10px;
     color: white;
+    user-select: none;  
 }
 
 .item {
     color: white;
     font-family: 'Montserrat';
     font-weight: 500;
+    user-select: none; 
 }
 
 .mat-divider {
     margin-top: 5px !important;
     margin-bottom: 10px !important;
     max-width: 150px;
-    display: flex;
     color: white !important;
     background-color: white;
     margin: 0 auto;
@@ -34,3 +35,7 @@
     color: inherit;
   }
 
+  .disabled {
+    color: white !important;
+    background-color: #ba1111;
+  }
